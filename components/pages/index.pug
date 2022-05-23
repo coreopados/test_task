@@ -1,0 +1,168 @@
+html(lang="en")
+    append vars
+        - currentPage = 'main'
+    //- Include head
+    include ../common/head.pug 
+    body(class=currentPage)
+        //- Include header
+        include ../common/header.pug
+        
+        section.main-section
+            .container
+                article.main-post
+                    .main-post__img
+                        img(src="img/main/main-post.png", alt="")
+                    .main-post__content
+                        a(href="#" class="main-post__content__title")  !{"TV Addons: Legal battle against Canadian media giants demonstrates severe consequ ences facing developers accused of copyright infringement"}
+                        .main-post__content__meta
+                            a(href="#" class="main-post__content__author" ) !{"Danica Sergison"} &nbsp; | &nbsp;
+                            
+                            span.main-post__content__date  !{"JUL 08, 2018"}
+                        .main-post__content__categories 
+                            a(href="#") !{"Copyright"}, 
+                            a(href="#") !{"News"},
+                            a(href="#") !{"Open Source"},
+                            a(href="#") !{"Privacy"}
+                        a(href="#" class="main-post__content__comments")
+                            img(src="img/comment.svg", alt="")
+                            span.comment-count !{'0'}
+
+        //- include tags
+        include ../common/tags.pug
+        
+        section.posts-section
+            .container 
+                .posts
+                    content.posts__content
+                        .posts__content__title !{"Recent posts"} 
+                        .posts__recent
+                            article.post
+                                .post__img
+                                    img(src="img/main/posts/1.png", alt="")
+                                .post__content
+                                    a(href="#" class="post__content__title")  !{"The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises"}
+                                    .post__content__meta
+                                        a(href="#" class="post__content__author" ) !{"Derek Zimmer"} &nbsp; | &nbsp;
+                                        span.post__content__date  !{"JUL 25, 2018"}
+                                    .post__content__categories 
+                                        a(href="#") !{"Governments"}, 
+                                        a(href="#") !{"Networking"},
+                                        a(href="#") !{"Open Source"},
+                                        a(href="#") !{"Privacy"},
+                                        a(href="#") !{"Security"}
+                                    a(href="#" class="post__content__comments")
+                                        img(src="img/comment.svg", alt="")
+                                        span.comment-count !{'0'}          
+                            article.post
+                                .post__img
+                                    img(src="img/main/posts/2.png", alt="")
+                                .post__content
+                                    a(href="#" class="post__content__title")  !{"How to get cheaper flights using a VPN"}
+                                    .post__content__meta
+                                        a(href="#" class="post__content__author" ) !{"Jayson"} &nbsp; | &nbsp;
+                                        span.post__content__date  !{"JUL 24, 2018"}
+                                    .post__content__categories 
+                                        a(href="#") !{"Guides"}
+                                    a(href="#" class="post__content__comments")
+                                        img(src="img/comment.svg", alt="")
+                                        span.comment-count !{'0'}          
+                            article.post
+                                .post__img
+                                    img(src="img/main/posts/3.png", alt="")
+                                .post__content
+                                    a(href="#" class="post__content__title")  !{"Net Neutrality was repealed, but the fight is far from over"}
+                                    .post__content__meta
+                                        a(href="#" class="post__content__author" ) !{"Chris Miller"} &nbsp; | &nbsp;
+                                        span.post__content__date  !{"JUL 22, 2018"}
+                                    .post__content__categories 
+                                        a(href="#") !{"Governments"}, 
+                                        a(href="#") !{"Net Neutrality"},
+                                        a(href="#") !{"News"}
+                                    a(href="#" class="post__content__comments")
+                                        img(src="img/comment.svg", alt="")
+                                        span.comment-count !{'0'}          
+                            article.post
+                                .post__img
+                                    img(src="img/main/posts/1.png", alt="")
+                                .post__content
+                                    a(href="#" class="post__content__title")  !{"The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises"}
+                                    .post__content__meta
+                                        a(href="#" class="post__content__author" ) !{"Derek Zimmer"} &nbsp; | &nbsp;
+                                        span.post__content__date  !{"JUL 25, 2018"}
+                                    .post__content__categories 
+                                        a(href="#") !{"Governments"}, 
+                                        a(href="#") !{"Networking"},
+                                        a(href="#") !{"Open Source"},
+                                        a(href="#") !{"Privacy"},
+                                        a(href="#") !{"Security"}
+                                    a(href="#" class="post__content__comments")
+                                        img(src="img/comment.svg", alt="")
+                                        span.comment-count !{'0'}          
+                            article.post
+                                .post__img
+                                    img(src="img/main/posts/2.png", alt="")
+                                .post__content
+                                    a(href="#" class="post__content__title")  !{"How to get cheaper flights using a VPN"}
+                                    .post__content__meta
+                                        a(href="#" class="post__content__author" ) !{"Jayson"} &nbsp; | &nbsp;
+                                        span.post__content__date  !{"JUL 24, 2018"}
+                                    .post__content__categories 
+                                        a(href="#") !{"Guides"}
+                                    a(href="#" class="post__content__comments")
+                                        img(src="img/comment.svg", alt="")
+                                        span.comment-count !{'0'}          
+                            article.post
+                                .post__img
+                                    img(src="img/main/posts/3.png", alt="")
+                                .post__content
+                                    a(href="#" class="post__content__title")  !{"Net Neutrality was repealed, but the fight is far from over"}
+                                    .post__content__meta
+                                        a(href="#" class="post__content__author" ) !{"Chris Miller"} &nbsp; | &nbsp;
+                                        span.post__content__date  !{"JUL 22, 2018"}
+                                    .post__content__categories 
+                                        a(href="#") !{"Governments"}, 
+                                        a(href="#") !{"Net Neutrality"},
+                                        a(href="#") !{"News"}
+                                    a(href="#" class="post__content__comments")
+                                        img(src="img/comment.svg", alt="")
+                                        span.comment-count !{'0'}          
+
+                        a.button.green-border !{"older posts"}
+                    aside.posts__sidebar
+                        form(action="#" id='search-form')
+                            .form-wrap 
+                                button(type='submit')
+                                    img(src="img/search.svg", alt="")
+                                input(type="text" placeholder="Search blog")
+                        .posts__sidebar__block
+                            h4.title-with-icon 
+                                include ../icons/announce.pug
+                                |!{"Announcements"}
+                            p.text-dot !{"Upcoming Changes (Live Chat, Less Censorship, More Access)"}
+                            p.text-dot !{"New Servers (US Washington DC)"}
+                            p.text-dot !{"New Servers (US Denver)"}
+                            p.text-dot !{"Open Source: Releasing the PIA iOS Client"}
+                            p.text-dot !{"Opera Extension is now available"}
+                        .posts__sidebar__block
+                            h4.title-with-icon 
+                                include ../icons/popular.pug
+                                |!{"Popular posts"}
+                            p.text-dot !{"The Gift of Privacy"}
+                            p.text-dot !{"UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture"}
+                            p.text-dot !{"About the PIA Client Security and VPN Security in General"}
+                            p.text-dot !{"A Private Net Is Just As Fundamental A Right As Freedom Of Speech"}
+                            p.text-dot !{"Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie"}
+                        a(href="#" target="blank" class="advertising")
+                            img(src="img/main/Bitmap.png", alt="") 
+                        .posts__sidebar__block
+                            h4 !{"Tag cloud"}
+                            img(class='tags-img' src="img/main/tags.png", alt="")
+        
+        //- include tarifs
+        include ../common/tarifs.pug
+       
+        //- include footer\
+        include ../common/footer.pug
+        
+        //- include scripts
+        include ../common/scripts.pug

@@ -1,0 +1,146 @@
+footer {
+    background: #fff;
+    padding: 84px 0 90px;
+
+    .foot-wrap {
+        a {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $grey;
+            margin-bottom: 10px;
+
+            &:hover {
+                color: #000;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $grey;
+            margin-bottom: 10px;
+
+        }
+
+        &__content {
+            display: grid;
+            grid-template-areas: "block1 block2 block4 block5"
+                "block1 block2 block4 block5"
+                "block1 block3 block4 block5"
+                "block1 block3 block4 block6";
+            grid-gap: 4px 40px;
+
+            &__block:nth-child(1) {
+                grid-area: block1;
+
+            }
+
+            &__block:nth-child(2) {
+                grid-area: block2;
+
+            }
+
+            &__block:nth-child(3) {
+                grid-area: block3;
+
+            }
+
+            &__block:nth-child(4) {
+                grid-area: block4;
+
+            }
+
+            &__block:nth-child(5) {
+                grid-area: block5;
+                max-width: 600px;
+                margin-bottom: 20px;
+            }
+
+            &__block:nth-child(6) {
+                grid-area: block6;
+
+            }
+
+            &__block {
+                ul {
+                    li:not(:last-of-type) {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .soc-block {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 32px;
+
+                    a {
+                        margin-bottom: 0;
+
+                        svg {
+                            path {
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+
+                    .facebook-icon:hover {
+                        svg {
+                            path {
+                                fill: #0674E7;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+
+                    .twitter-icon:hover {
+                        svg {
+                            path {
+                                fill: #1D9BF0;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+
+                    .gmail-icon:hover {
+                        svg {
+                            path {
+                                fill: #EA4235;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+
+                    .in-icon:hover {
+                        svg {
+                            path:first-of-type {
+                                fill: #0A66C2;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+
+                    .reddit-icon:hover {
+                        svg {
+                            path:first-of-type {
+                                fill: #FF4500;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+
+                    .youtube-icon:hover {
+                        svg {
+                            path:first-of-type {
+                                fill: #FF0000;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
